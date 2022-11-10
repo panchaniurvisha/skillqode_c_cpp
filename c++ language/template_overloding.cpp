@@ -1,7 +1,7 @@
-#include<iostram>
+#include<iostream>
 using namespace std;
 template <class T>
-void dispaly(T t1)
+void display(T t1)
 {
     cout<<"Displaying Template :"<<t1<<"\n";
 }
@@ -12,7 +12,7 @@ void display(T1 t1,T2 t2)
 }
 int main()
 {
-    dispaly(200);
+    display(200);
     display(12.40);
     display('G');
     display('G',1.25);
