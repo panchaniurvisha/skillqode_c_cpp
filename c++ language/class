@@ -1,0 +1,53 @@
+#include<iostream>
+using namespace std;
+/*class airth
+{
+    int a,b;
+    public:
+    void setval(int x,int y)
+    {
+        a=x;
+        b=y;
+    }
+    void getval()
+    {
+        cout<<"\n a :"<<a<<"\tb :"<<b;
+    }
+    void dosum()
+    {
+        cout<<"\n a+b :"<<a+b;
+    }
+};
+int main()
+{
+    airth obj1;
+    obj1.setval(10,20);
+    obj1.getval();
+    obj1.dosum();
+}*/
+class tata
+{
+    string color;
+    public:
+    void own_color(string clr)
+    {
+        color=clr;
+    }
+    void get_color()
+    {
+        cout<<" your tiago color is "<<color;
+    }
+    void tata_motor()
+    {
+        cout<<"\n welcome tata motor";
+    }
+};
+int main()
+{
+    tata tiago;
+    tiago.tata_motor();
+    tiago.own_color("red");
+    tiago.get_color();
+}
+
+
