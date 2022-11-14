@@ -54,7 +54,7 @@ int main()
         b.withdraw(50);
 
         cout<<"\n total deposit amt:"<<Bank::total_deposite_amt;
-        cout<<"\n total deposit amt:"<<Bank::total_withdraw_amt;
+        cout<<"\n total Withdraw amt:"<<Bank::total_withdraw_amt;
         cout<<"\n total no_of transaction:"<<Bank::total_trans;
 
         cout<<"\nbalance a:"<<a.showbalance();
