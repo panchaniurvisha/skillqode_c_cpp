@@ -1,4 +1,4 @@
-/ofstream:stream class to write on files;
+//ofstream:stream class to write on files;
 //ifstream:stream class to read from file;
 //fstream: stream class to both read and write from/to files;
 #include<iostream>
