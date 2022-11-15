@@ -1,26 +1,27 @@
-/ofstream:stream class to write on files;
-//ifstream:stream class to read from file;
-//fstream: stream class to both read and write from/to files;
-#include<iostream>
-#include<fstream>
-using namespace std;
-int main()
-{
-    string srg;
-    ifstream filestream("file1.txt");
-    if(filestream.is_open())
-    {
-        while(getline(filestream,srg))
-        {
-            cout<<srg<<endl;
-        }
-        filestream.close();
-    }
-    else
-    {
-        cout<<"file is fail."<<endl;
-    }
-    return 0;
-    
-}
-    
+#include <fstream>  
+#include <iostream>  
+using namespace std;  
+int main () {  
+   char input[75];  
+   ofstream os;  
+   os.open("file3.txt");  
+   cout <<"Writing to a text file:" << endl;  
+   cout << "Please Enter your name: ";   
+   cin.getline(input, 100);  
+   os << input << endl;  
+   cout << "Please Enter your age: ";   
+   cin >> input;  
+   cin.ignore();  
+   os << input << endl;  
+   os.close();  
+   ifstream is;   
+   string line;  
+   is.open("file3.txt");   
+   cout << "Reading from a text file:" << endl;   
+   while (getline (is,line))  
+   {  
+   cout << line << endl;  
+   }      
+   is.close();  
+   return 0;  
+}  
