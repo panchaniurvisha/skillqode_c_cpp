@@ -6,7 +6,7 @@
 using namespace std;
 int main()
 {
-    ofstream filestream("file.txt");
+    ofstream filestream("file11.txt");
     if(filestream.is_open())
     {
         filestream<<"Wellcome to skillqode";
