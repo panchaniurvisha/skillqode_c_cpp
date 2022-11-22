@@ -1,18 +1,4 @@
-/*#include<stdio.h>
-#include<stdlib.h>
-int main()
-{
-
-    int a[10],x=12;
-    for(int i=0;i<10;i++)
-    {
-        a[i]=rand()%50;
-        printf("%d\t",i);
-        printf("%d\n",a[i]);
-      
-    }
-    return 0;
-}*/
+//SEARCH=======================using..rand()
 #include<stdio.h>
 #include<stdlib.h>
 int main()
