@@ -1,38 +1,26 @@
-/*#include<stdio.h>
-#include<stdlib.h>
-int main()
-{
-
-    int a[10],x=12;
-    for(int i=0;i<10;i++)
-    {
-        a[i]=rand()%50;
-        printf("%d\t",i);
-        printf("%d\n",a[i]);
-      
-    }
-    return 0;
-}*/
 #include<stdio.h>
 #include<stdlib.h>
 int main()
 {
-    int a[10],x;
+
+    int a[10];
     for(int i=0;i<10;i++)
     {
         a[i]=rand()%50;
-        printf("%d\t",i);
-        printf("%d\n",a[i]);
+        printf("\n a[%d] : %d",i,a[i]);
     }
-     printf("Enter the key :");
-     scanf("%d",&x);
-    for(int i=0; i<10;i++)
-    {
-        if(a[i]==x)
-        {
-			printf("element found ");
-            return i++;		 
-        }
-    }
-	printf("element  not  found");
+    return 0;
 }
+/*#include<stdio.h>
+int main()
+{
+    int a[30];
+    // for(int i=1;i<10;i++)
+    //     printf("\t %d",rand()%100);
+    for(int i=0;i<10;i++)
+    {
+       a[i]=rand()%20+10;
+        printf("\n a[%d] : %d",i,a[i]);
+    }
+    return 0;
+}*/
