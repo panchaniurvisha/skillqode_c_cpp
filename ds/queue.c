@@ -53,7 +53,7 @@ int main ()
 void insert()  
 {      
     //if(rear==n-1)  
-    if(rear>=n-1)
+    if(rear>=n)
     {  
         printf("\nqueue is overflow\n");  
     }  
