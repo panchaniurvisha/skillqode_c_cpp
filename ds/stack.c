@@ -79,7 +79,7 @@ int main()
 }
 void push()
 {
-    if(top>=n-1)
+    if(top+1==n)
     {
         printf("\n\tSTACK is overflow");
         
