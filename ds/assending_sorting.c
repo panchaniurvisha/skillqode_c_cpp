@@ -1,4 +1,4 @@
-/ASSENDING SORTING
+//ASSENDING SORTING
 #include<stdio.h>
 #include<stdlib.h>
 #define maxsize 100;
