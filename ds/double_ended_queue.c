@@ -25,8 +25,9 @@ void insert_rear()
         printf("\n Input the elements for adding queue :");
         scanf("%d",&added_item);
         deque_arr[rear] = added_item;
-        printf("\n after -- > front :%d,rear :%d,front,rear");
-} 
+        printf("\n after -- > front : %d \t rear : %d ",front,rear);
+}
+
 void insert_front()
 {
     printf("\n After -->  front : %d \t rear : %d ",front,rear);    
@@ -51,8 +52,6 @@ void insert_front()
         deque_arr[front] = added_item;
         printf("\n after -- > front : %d \t rear : %d ",front,rear);
 }
-    
-
  
 void delete_front(){
     if(front==-1)

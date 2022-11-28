@@ -12,6 +12,7 @@ int main()
     }
      printf("Enter the key :");
      scanf("%d",&x);
+     //selaction sort================
     for(int i=0; i<10;i++)
     {
         if(a[i]==x)
