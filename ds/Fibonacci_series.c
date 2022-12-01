@@ -1,25 +1,26 @@
-#include<stdio.h>  
-int fibonacci(int);  
-void main ()  
-{  
-    int n,f;  
-    printf("Enter the value of n?");  
-    scanf("%d",&n);  
-    f = fibonacci(n);  
-    printf("%d",f);  
-}  
-int fibonacci (int n)  
-{  
-    if (n==0)  
-    {  
-    return 0;  
-    }  
-    else if (n == 1)  
-    {  
-        return 1;   
-    }  
-    else  
-    {  
-        return fibonacci(n-1)+fibonacci(n-2);  
-    }  
-}  
+#include<stdio.h>
+int fibonacci(int);
+int main()
+{
+    int n,i;
+    printf("enter number :");
+    scanf("%d",&n);
+    printf("fibonacci series :");
+    for(i=0;i<=n;i++)
+    {
+        printf("%d\t",fibonacci(i));
+    }
+}
+int fibonacci(int i)
+{
+    if(i==0)
+    {
+        return 0;
+    }
+    else if(i==1)
+    {
+        return 1;
+    }
+    else
+    return (fibonacci(i-1) + fibonacci(i-2));
+}
