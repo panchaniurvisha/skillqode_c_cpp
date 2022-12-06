@@ -1,0 +1,31 @@
+void main(){
+  /*int data = 25;
+    int number = 100;
+        print(data);
+        print(number);*/
+  
+  //replace float use double;
+  /*double data =12.50;
+  double height =5.4;
+  
+      print(data);
+      print(height);*/
+  
+   /*int num1 = 10;             
+   double num2 = 10.50;  
+      print(num1);
+      print(num2);*/
+
+  /*String str1 = 'this is a single line string';
+   String str2 = "I Am Urvisha"; 
+   String str3 = "hello"; 
+   String str4 = "world"; 
+   String res = str3+str4; 
+   print(str1);
+   print(str2);
+   print(str3);
+   print(str4);
+   print(res);*/
+  
+  
+}
