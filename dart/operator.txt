@@ -1,11 +1,11 @@
 void main(){
    //arithmatic operator
-   string data1 ="100",data2="20",data3;
+   dynamic data1 =100,data2=20;
    print("${data1+data2}");
    print("${data1/data2}");
    print("${data1-data2}");
    print("${data1*data2}");
-   print("${data1%data2}");
+   print("${data1%data2}-------------");
    
    //relational operator
    print("${data1<data2}");
@@ -13,19 +13,22 @@ void main(){
    print("${data1>data2}");
    print("${data1>=data2}");
    print("${data1==data2}");
-   print("${data1!=data2}");
+   print("${data1!=data2}-------------");
   
    //logical operator
-   print("${10<20 && 10>20}");
-   print("${10<20 || 10>20}");
-   print("${!(data1<data2)}");
+   print("${data1>data2 && data1>data2}");
+   print("${data1>data2 || data1<data2}");
+   print("${!(data1<data2)}------------");
   
    //Assignment operator
-   print("${data3=(data1+data2)}");
+   print("${data1=100}");
    print("${data1+=data2}");
    print("${data1-=data2}");
    print("${data1*=data2}");
    print("${data1/=data2}");
-   print("${data1%=data2}");
-  
+   print("${data1%=data2}-------------");
+   
+   //bitwise operator
+   
+   
 }
