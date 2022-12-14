@@ -45,7 +45,7 @@ void main(){
    print("\nstandard:${ student.getData("urvisha",1,25,5)}");
 }*/
 //with return no parameter
-/*ass School{
+class School
      String name="urvisha";
      int age=25,standard=5,rollno=5;
      dynamic getData(){
@@ -60,7 +60,7 @@ void main(){
   student.getData();
   print("\nrollno:${student.rollno}");
 
-} */
+} 
 
 
 
