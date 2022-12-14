@@ -2,7 +2,6 @@
 /*class School{
      String name="urvisha";
      int rollno=1,age=25,standard=12;
-  
      void getData(){
        print("\nstudent name :$name");
        print("\nstudent roll_no :$rollno");
@@ -18,6 +17,8 @@ void main(){
   print(student.standard);
   student.getData();
 } */
+
+
 //no return with parameter
 /*class School{
    void getData(String name,int rollno,int age,int standard){
@@ -31,6 +32,8 @@ void main(){
    School student =School();
    student.getData("urvisha",1,25,5);   
 }*/
+
+
 //with return with parameter
 /*class School{
    dynamic getData(String name,int rollno,int age,int standard){
@@ -44,16 +47,18 @@ void main(){
    School student =School();  
    print("\nstandard:${ student.getData("urvisha",1,25,5)}");
 }*/
+
+
 //with return no parameter
-class School
+class School{
      String name="urvisha";
-     int age=25,standard=5,rollno=5;
-     dynamic getData(){
+     int age=25,standard=5,rollno;
+    dynamicgetData(){
       print("\nName:$name");
       print("\nage:$age");
       print("\nstandard:$standard");
-      return rollno;
-     }    
+      return 1;
+     } 
 }
 void main(){
   School student =School();
