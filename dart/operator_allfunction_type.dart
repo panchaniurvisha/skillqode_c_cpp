@@ -1,33 +1,3 @@
-Skip to content
-Search or jump to…
-Pull requests
-Issues
-Codespaces
-Marketplace
-Explore
- 
-@panchaniurvisha 
-panchaniurvisha
-/
-home-c-cpp
-Public
-Code
-Issues
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
-Settings
-home-c-cpp/dart/operator_allfunction_type.txt
-@panchaniurvisha
-panchaniurvisha first commit
-Latest commit 1af36c0 20 hours ago
- History
- 1 contributor
-258 lines (249 sloc)  8.73 KB
-
 //no return no parameter
 /*class Maths{
    dynamic data1=100,data2=20,data3=10;
@@ -89,7 +59,7 @@ void main(){
 
 
 //no return with parameter
-class Maths{
+/*class Maths{
    void arithmaticOperator(int data1,int data2){
          print("${data1+data2}");
          print("${data1/data2}");
@@ -144,10 +114,10 @@ void main(){
           operator.conditionalOperator(100,20,10);
           operator.bitwiseOperator(100,20);
           operator.assignmentOperator(100,20);
-}
+}*/
 
 //with return with parameter
-class Maths{
+/*class Maths{
    int arithmaticOperator(int data1,int data2){
          print("\n${data1+data2}");
          print("${data1/data2}");
@@ -285,4 +255,4 @@ void main(){
           print("\nmaximum value :${operator.conditionalOperator()}---------");
           print("data2 >> 2 :${operator.bitwiseOperator()}-----------");
           print("data1%=data2 :${operator.assignmentOperator()}-------");
-}
+}*/
