@@ -26,7 +26,11 @@ void main() {
   (data1 > data2) ? print("$data1 is greater") : print("$data2 is greater");
 
   //conditional operator
-  (data1 > data2 && data1 > data3)? print("$data1 is greater"): (data2 > data3)? print("$data2 is greater):print("$data3 is grater");
+  (data1 > data2 && data1 > data3)
+      ? print("$data1 is greater")
+      : (data2 > data3)
+          ? print("$data2 is greater")
+          : print("$data3 is grater");
 
   //Bitwise operator
   print("${data1 & data2}");

@@ -21,7 +21,7 @@
   print(value1);
   print(value2);*/
 //dynamic and var data type
-void main() {
+/*void main() {
   dynamic data = "abc"; //initially it's a string
   print(data);
   data = 123; //then we assign an int value to it
@@ -34,4 +34,10 @@ void main() {
   //print(name);
   name = "skill quode";
   print(name);
+}*/
+void main() {
+  dynamic data='urvi', data2=20, data3=5.5;
+  print("enter name :$data");
+  print("enter number :$data2");
+  print("enter height :$data3");
 }
