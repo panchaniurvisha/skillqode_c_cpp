@@ -39,7 +39,7 @@ class Bank {
 
 void main() {
   Bank employee = Bank();
-  int ch;
+  int choice;
   do {
     print("\n---------------MENU");
     print("1:open account");
@@ -49,8 +49,8 @@ void main() {
     print("5.showAccount");
     print("6.exit");
     print("Enter your choice :   ");
-    ch = int.parse(stdin.readLineSync()!);
-    switch (ch) {
+    choice = int.parse(stdin.readLineSync()!);
+    switch (choice) {
       case 1:
         employee.openAccount();
         break;
@@ -69,5 +69,5 @@ void main() {
       default:
         print("Invalid input ");
     }
-  } while (ch != 0);
+  } while (choice != 0);
 }
