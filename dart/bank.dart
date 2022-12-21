@@ -1,5 +1,4 @@
 import 'dart:io';
-
 class Bank {
   String? name;
   int? acc_no, balance, amt;
