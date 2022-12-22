@@ -1,54 +1,65 @@
-/*class Realince {
-  void progress() {
-    print("our profit is up");
-  }
+import 'dart:io';
+
+class Arithmatic {
+  int? data1, data2, sum, multiple, devision, modulus;
+  void printData() {}
 }
 
-class SellingDepartment extends Realince {
+class Sum extends Arithmatic {
   @override
-  void progress() {
-    print("market is down");
-    super.progress();
+  void printData() {
+    print("\ndata1=");
+    data1 = int.parse(stdin.readLineSync()!);
+    print("\ndata2 =");
+    data2 = int.parse(stdin.readLineSync()!);
+    super.printData();
   }
-}
-void main() {
-  SellingDepartment employee = SellingDepartment();
-  employee.progress();
-}*/
 
-/*class Animal {
-  void speak() {
-    print("Animal is speaking");
-  }
+  void showResult() {}
 }
 
-class Cow extends Animal {
+class Addition extends Sum {
   @override
-  void speak() {
-    print("cow is speaking");
-    super.speak();
+  void showResult() {
+    print("sum=${data1! + data2!}");
+    super.showResult();
   }
 }
 
-void main() {
-  Cow gir = Cow();
-  gir.speak();
-}*/
-class Stationary {
-  void purchase() {
-    print("lots of things are purchased");
-  }
-}
-
-class Pen extends Stationary {
+class Multiplication extends Addition {
   @override
-  void purchase() {
-    print("customer are purchasing lots of pens");
-    super.purchase();
+  void showResult() {
+    print("multiple=${sum! * data2!}");
+    super.showResult();
+  }
+}
+
+class Devision extends Multiplication {
+  @override
+  void showResult() {
+    print("devision=${multiple! / data2!}");
+    super.showResult();
+  }
+}
+
+class Subtraction extends Devision {
+  @override
+  void showResult() {
+    print("substraction=${devision! - data2!}");
+    super.showResult();
+  }
+}
+
+class Modulus extends Subtraction {
+  @override
+  void showResult() {
+    print("substraction=${modulus! % data2!}");
+    super.showResult();
   }
 }
 
 void main() {
-  Pen synosoftec = Pen();
-  synosoftec.purchase();
+  Sum sum1 = Sum();
+  sum1.printData();
+  sum1.showResult();
 }
