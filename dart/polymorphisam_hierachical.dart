@@ -1,4 +1,5 @@
-/*import 'dart:io';
+import 'dart:io';
+
 class Arithmatic {
   int? data1, data2;
   void printData() {
@@ -8,31 +9,67 @@ class Arithmatic {
     data2 = int.parse(stdin.readLineSync()!);
   }
 }
+
 class Addition extends Arithmatic {
+  @override
+  void printData() {
+    print("\n Addition Of Two Value----------------");
+    super.printData();
+  }
+
   void showResult() {
     print("sum=${data1! + data2!}");
   }
 }
+
 class Multiplication extends Arithmatic {
+  @override
+  void printData() {
+    print("\n Multiplication Of Two Value----------------");
+    super.printData();
+  }
+
   void multiply() {
     print("multiple=${data1! * data2!}");
   }
 }
+
 class Devision extends Arithmatic {
+  @override
+  void printData() {
+    print("\n Devision Of Two Value----------------");
+    super.printData();
+  }
+
   void devide() {
     print("devision=${data1! / data2!}");
   }
 }
+
 class Subtraction extends Arithmatic {
+  @override
+  void printData() {
+    print("\n Subtraction Of Two Value----------------");
+    super.printData();
+  }
+
   void subtractions() {
     print("substraction=${data1! - data2!}");
   }
 }
+
 class Modulus extends Arithmatic {
+  @override
+  void printData() {
+    print("\n Modulus Of Two Value----------------");
+    super.printData();
+  }
+
   void module() {
     print("modules=${data1! % data2!}");
   }
 }
+
 void main() {
   Addition add = Addition();
   add.printData();
@@ -49,25 +86,32 @@ void main() {
   Modulus module1 = Modulus();
   module1.printData();
   module1.module();
-}*/
-class Machinery {
+}
+/*class Machinery {
   void generate() {
     print("\n all machine is worked on");
   }
 }
-
 class Spareparts extends Machinery {
+  @override
+  void generate() {
+    print("\n All sparparts are different");
+    super.generate();
+  }
   void close() {
     print("\n all machine is worked off");
   }
 }
-
 class Kit extends Machinery {
+  @override
+  void generate() {
+    print("\n kit is old ");
+    super.generate();
+  }
   void open() {
     print("\n kit is over");
   }
 }
-
 void main() {
   Kit kit1 = Kit();
   kit1.generate();
@@ -75,4 +119,4 @@ void main() {
   Spareparts one = Spareparts();
   one.generate();
   one.close();
-}
+}*/

@@ -3,17 +3,16 @@
     print("our profit is up");
   }
 }
-
 class SellingDepartment extends Realince {
-  @override
-  void progress() {
+  
+  void running() {
     print("market is down");
-    super.progress();
   }
 }
 void main() {
   SellingDepartment employee = SellingDepartment();
   employee.progress();
+  employee.running
 }*/
 
 /*class Animal {
@@ -21,34 +20,30 @@ void main() {
     print("Animal is speaking");
   }
 }
-
 class Cow extends Animal {
-  @override
-  void speak() {
-    print("cow is speaking");
-    super.speak();
+  void listen() {
+    print("cow is listening");
   }
 }
-
 void main() {
   Cow gir = Cow();
   gir.speak();
+  gir.listen();
 }*/
-class Stationary {
-  void purchase() {
-    print("lots of things are purchased by shopper");
+class Human {
+  void eating() {
+    print("\n humans are eating mango");
   }
 }
 
-class Pen extends Stationary {
-  @override
-  void purchase() {
-    print("customer are purchasing lots of pens");
-    super.purchase();
+class Men extends Human {
+  void sleeping() {
+    print("\n women are sleeping at night");
   }
 }
 
 void main() {
-  Pen synosoftec = Pen();
-  synosoftec.purchase();
+  Men piyush = Men();
+  piyush.eating();
+  piyush.sleeping();
 }
