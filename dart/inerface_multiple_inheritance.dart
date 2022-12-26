@@ -1,7 +1,11 @@
-class University {
+class interfaceUniversity {
   int data = 25;
-  void printData(String name) {
-    print("\n Enter University Nmame :${String}");
+  void printData(
+      String universityName, String collegeName, String name, double height) {
+    print("\n student University Name:${universityName}");
+    print("\n student College Name:${collegeName}");
+    print("\n student name:${name}");
+    print("\n student height :${height}");
   }
 
   void setData() {
@@ -13,14 +17,18 @@ class University {
   }
 }
 
-class College {
-  int data1 = 30;
-  void printData(String name) {
-    print("\n Enter College Nmame :${String}");
+class interfaceCollege {
+  int data = 30;
+  void printData(
+      String universityName, String collegeName, String name, double height) {
+    print("\n student University Name:${universityName}");
+    print("\n student College Name:${collegeName}");
+    print("\n student name:${name}");
+    print("\n student height :${height}");
   }
 
   void setData() {
-    data1 = 30;
+    data = 30;
   }
 
   int getData(int data) {
@@ -28,16 +36,16 @@ class College {
   }
 }
 
-class Student implements University, College {
+class Student implements interfaceUniversity, interfaceCollege {
   @override
   int data = 35;
-
   @override
-  int data1 = 40;
-
-  @override
-  void printData(String name) {
-    print("\n students name:${name}");
+  void printData(
+      String universityName, String collegeName, String name, double height) {
+    print("\n student University Name:${universityName}");
+    print("\n student College Name:${collegeName}");
+    print("\n student name:${name}");
+    print("\n student height :${height}");
   }
 
   @override
@@ -53,10 +61,13 @@ class Student implements University, College {
 
 void main() {
   Student student1 = Student();
-  student1.printData("urvi");
+  student1.printData(
+      'Gujrat University', 'Gujrat commers college', "urvi", 5.3);
   student1.setData();
-  student1.getData(35);
-  student1.printData("piyush");
+  print("\n student roll_no:${student1.getData(35)}");
+  print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+  student1.printData(
+      'Vir Narmad University', 'r.v.raval college', "piyush", 5.7);
   student1.setData();
-  student1.getData(40);
+  print("\n student roll_no:${student1.getData(40)}");
 }
