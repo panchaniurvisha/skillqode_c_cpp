@@ -55,6 +55,7 @@ int main()
     push(3);
     push(30);
     push(10);
+    push(2);
     printf("Linked List before sorting:\n");
     printlist(head);
     printf("\n");
