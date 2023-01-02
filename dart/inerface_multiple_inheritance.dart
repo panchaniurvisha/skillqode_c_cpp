@@ -1,4 +1,4 @@
-class interfaceUniversity {
+class University {
   int data = 25;
   void printData(
       String universityName, String collegeName, String name, double height) {
@@ -17,7 +17,7 @@ class interfaceUniversity {
   }
 }
 
-class interfaceCollege {
+class College {
   int data = 30;
   void printData(
       String universityName, String collegeName, String name, double height) {
@@ -36,7 +36,7 @@ class interfaceCollege {
   }
 }
 
-class Student implements interfaceUniversity, interfaceCollege {
+class Student implements University, College {
   @override
   int data = 35;
   @override

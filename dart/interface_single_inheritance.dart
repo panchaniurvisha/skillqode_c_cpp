@@ -1,5 +1,5 @@
 /*import 'dart:io';
-class interfaceBike{
+class Bike{
   String ?name;
   void printData(){
     print("\n Bike Name :\t");
@@ -7,7 +7,7 @@ class interfaceBike{
     
   }
 }
-class Platina implements interfaceBike{
+class Platina implements Bike{
   @override
   String? name;
   @override
@@ -22,13 +22,13 @@ void main(){
 }*/
 
 ///without using stdin......
-class interfaceBike {
+class Bike {
   void printData() {
     print("\n Bike Name :platina\t");
   }
 }
 
-class Platina implements interfaceBike {
+class Platina implements Bike {
   @override
   void printData() {
     print("\n Bike Nmae :Yamaha");
