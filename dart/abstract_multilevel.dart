@@ -32,7 +32,7 @@ class Puppy extends Dog {
   void talk(name1, data3, data4) {
     print("\n Puppy name is $name1");
     print("\n Puppy age is $data3");
-    print("\n Dog colour is $data4");
+    print("\n Puppy colour is $data4");
   }
 }
 
