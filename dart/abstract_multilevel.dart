@@ -1,46 +1,37 @@
 abstract class Animal {
-  void talk(
-    String name,
-    String data,
-    int data2,
-  );
-
-  void growl(String);
+  void talk();
+  void growl();
 }
 
 class Dog extends Animal {
   @override
-  void growl(name) {
-    print("\n dog name is $name........");
+  void growl() {
+    print("\n Dog is growling");
   }
 
   @override
-  void talk(name, data, data2) {
-    print("\n Dog name is $name");
-    print("\n Dog age is $data");
-    print("\n Dog colour is $data2");
+  void talk() {
+    print("\n Dog  is talking to another dog");
   }
 }
 
 class Puppy extends Dog {
   @override
-  void growl(name1) {
-    print("\n Puppy name is $name1........");
+  void growl() {
+    print("\n Puppy is growling........");
   }
 
   @override
-  void talk(name1, data3, data4) {
-    print("\n Puppy name is $name1");
-    print("\n Puppy age is $data3");
-    print("\n Puppy colour is $data4");
+  void talk() {
+    print("\n Puppy is talking to another puppy");
   }
 }
 
 void main() {
   Puppy puppy = Puppy();
-  puppy.growl("kairav");
-  puppy.talk("kairav", "red", 20);
+  puppy.growl();
+  puppy.talk();
   Dog dog = Dog();
-  dog.growl("Nora");
-  dog.talk("Nora", "yellow", 15);
+  dog.growl();
+  dog.talk();
 }
