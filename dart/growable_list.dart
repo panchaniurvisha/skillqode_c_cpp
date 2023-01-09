@@ -252,6 +252,5 @@ void main() {
   dataOne = listThirtyEight.where((element) => element.isEven);
   print(dataOne);
 
-  List listThirtyNine = <int>[1, 2, 3, 4, 5];
-  listThirtyNine.whereType()
+  
 }
