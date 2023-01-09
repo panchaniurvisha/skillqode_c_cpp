@@ -240,18 +240,6 @@ void main() {
   data = listThirtySix.takeWhile((value) => value != 4);
   print(data);
 
-  Map planets = <int, String>{1: 'Mercury', 2: 'Venus', 3: 'Mars'};
-  final valueSet = planets.values.toSet();
-  print(valueSet);
-  final keysSet = planets.keys.toSet();
-  print(keysSet);
-
-  final planetsOne = <int, String>{1: 'Mercury', 2: 'Venus', 3: 'Mars'};
-  data = planetsOne.keys.toList(growable: false);
-  print(data);
-  result = planetsOne.values.toList(growable: false);
-  print(result);
-
   List listThirtySeven = <int>[1, 2, 3, 5, 6, 7];
   var res = listThirtySeven.toString();
   print("New String: ${res}");
@@ -263,4 +251,7 @@ void main() {
   print(dataOne);
   dataOne = listThirtyEight.where((element) => element.isEven);
   print(dataOne);
+
+  List listThirtyNine = <int>[1, 2, 3, 4, 5];
+  listThirtyNine.whereType()
 }
