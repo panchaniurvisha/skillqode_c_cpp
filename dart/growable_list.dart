@@ -182,7 +182,12 @@ void main() {
       listTwentyThree.lastIndexWhere((element) => element.startsWith('p'), 2));
 
   List<int> listTwentyFour = [25, 5, 10, 12];
-  print(listTwentyFour.reduce((value, element) => value + element));
+  print(listTwentyFour.reduce((value, element) {
+    print("7.value:$value ");
+    print("element $element");
+    print(element);
+    return 0;
+  }));
 
   List<String> listtwentyFive = ["vaidehi", "piyu", "urvi", "piyu"];
   listtwentyFive.removeWhere((element) => element.length == 4);
@@ -251,6 +256,4 @@ void main() {
   print(dataOne);
   dataOne = listThirtyEight.where((element) => element.isEven);
   print(dataOne);
-
-  
 }

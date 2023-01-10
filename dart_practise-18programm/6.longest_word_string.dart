@@ -9,7 +9,6 @@ String long_string(arr) {
 }
 
 void main() {
-  var arr = 'Web Development tutorial';//'Web Development tutorial'
+  var arr = 'Web Development tutorial'; //'Web Development tutorial'
   print("Longest word Name--------------");
-
 
