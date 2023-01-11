@@ -181,12 +181,12 @@ void main() {
   print(
       listTwentyThree.lastIndexWhere((element) => element.startsWith('p'), 2));
 
-  List<int> listTwentyFour = [25, 5, 10, 12];
+  List<num> listTwentyFour = [25, 5, 10, 12,12.5];
   print(listTwentyFour.reduce((value, element) {
     print("7.value:$value ");
     print("element $element");
-    print(element);
-    return 0;
+
+    return value + element;
   }));
 
   List<String> listtwentyFive = ["vaidehi", "piyu", "urvi", "piyu"];
