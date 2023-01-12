@@ -1,14 +1,8 @@
-void main(){
-    function getAllSubsets(array) {
-    const subsets = [[]];
-    
-    for (const el of array) {
-        const last = subsets.length-1;
-        for (let i = 0; i <= last; i++) {
-            subsets.push( [...subsets[i], el] );
-        }
-    }
-    
-    return subsets;
-}
-}
+ void main(){
+     List<int> superSet= [];
+      superSet.add(1);
+      superSet.add(2);
+      superSet.add(3);
+      superSet.add(4);
+      System.out.println(getSubsets(superSet,2));
+ }

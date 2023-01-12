@@ -1,14 +1,14 @@
-String long_string(arr) {
-  var longest = arr[0];
-  for (var i = 1; i < arr.length; i++) {
-    if (arr[i].length > longest.length) {
-      longest = arr[i];
+dynamic find_longest_word(str) {
+  final List<String> splitStr = str.split(' ');
+  var longest = splitStr[0];
+  for (var i = 1; i < splitStr.length; i++) {
+    if (splitStr[i].length > longest.length) {
+      longest = splitStr[i];
     }
   }
   return longest;
 }
 
 void main() {
-  var arr = 'Web Development tutorial'; //'Web Development tutorial'
-  print("Longest word Name--------------");
-
+  print(find_longest_word('Web Development Tutorial'));
+}
